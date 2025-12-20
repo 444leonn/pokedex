@@ -1,0 +1,8 @@
+@import 'tailwindcss';
+
+@layer components {
+    .not-found {
+        @apply flex items-center justify-center h-screen;
+        @apply text-2xl text-red-400 dark:text-red-600;
+    }
+}
