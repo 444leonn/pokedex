@@ -1,0 +1,37 @@
+@import 'tailwindcss';
+
+@layer components {
+    footer {
+        @apply fixed inset-x-0 bottom-0;
+        @apply px-2 py-2 min-h-fit max-h-60 w-full;
+        @apply bg-gray-100 rounded-tl-2xl rounded-tr-2xl border-2 border-red-400;
+    }
+
+    h1 {
+        @apply static text-center text-2xl my-1;
+        @apply font-bold font-mono;
+    }
+
+    .redes {
+        @apply flex justify-center items-center;
+        @apply items-center;
+    }
+    
+    .social {
+        @apply items-center min-h-fit max-h-fit min-w-fit max-w-1/10;
+        @apply bg-gray-200 rounded-xl border-2 border-gray-300;
+    }
+
+    .info {
+        @apply flex items-center;
+    }
+
+    img {
+        @apply min-h-11 min-w-11 max-h-11 max-w-11;
+    }
+
+    span {
+        @apply hidden md:inline;
+        @apply mx-2 text-lg;
+    }
+}
