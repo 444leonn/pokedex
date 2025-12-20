@@ -20,9 +20,10 @@
     }
 
     .information {
+        @apply px-4 sm:px-6 md:px-0;
         @apply text-center;
         @apply text-base sm:text-lg md:text-xl font-medium;
-        @apply px-4 sm:px-6 md:px-0;
+        @apply text-black dark:text-white;
     }
 
     h2 {
