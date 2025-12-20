@@ -18,8 +18,9 @@
     }
     
     .social {
-        @apply items-center min-h-fit max-h-fit min-w-fit max-w-1/10;
+        @apply items-center mx-2 min-h-fit max-h-fit min-w-fit max-w-1/10;
         @apply bg-gray-200 rounded-xl border-2 border-gray-300;
+        @apply transition-transform duration-300 hover:scale-105;
     }
 
     .info {
