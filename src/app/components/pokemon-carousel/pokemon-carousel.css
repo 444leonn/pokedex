@@ -16,7 +16,7 @@
     }
 
     .carousel-track app-pokemon-card {
-        @apply flex-shrink-0 w-40;
+        @apply shrink-0 w-40;
     }
 
     @keyframes scroll {
