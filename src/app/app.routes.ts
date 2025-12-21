@@ -22,7 +22,7 @@ export const routes: Routes = [
         title: 'Pokedex - Types',
     },
     {
-        path: 'generation/:name',
+        path: 'generation/:id',
         component: GenerationPage,
         title: 'Pokedex - Generation',
     },
