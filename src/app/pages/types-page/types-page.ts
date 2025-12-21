@@ -5,11 +5,11 @@ import { PokemonTypeData } from '../../models/aux.model';
 import { Navbar } from "../../components/navbar/navbar";
 import { Footer } from "../../components/footer/footer";
 import { PokemonCardSearch } from "../../components/pokemon-card-search/pokemon-card-search";
-
+import { NotFoundComp } from '../../components/not-found-comp/not-found-comp';
 
 @Component({
   selector: 'app-types-page',
-  imports: [Navbar, Footer, PokemonCardSearch],
+  imports: [Navbar, Footer, PokemonCardSearch, NotFoundComp],
   templateUrl: './types-page.html',
   styleUrl: './types-page.css',
 })

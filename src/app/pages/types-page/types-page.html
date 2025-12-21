@@ -1,9 +1,13 @@
 <app-navbar />
 
-<div class="grid-container">
-    @for (pokemon of typeData?.pokemon; track pokemon.pokemon.name) {
-        <app-pokemon-card-search [name]="pokemon.pokemon.name" />
-    }
-</div>
+@if (typeData) {
+    <div class="grid-container">
+        @for (pokemon of typeData.pokemon; track pokemon.pokemon.name) {
+            <app-pokemon-card-search [name]="pokemon.pokemon.name" />
+        }
+    </div>
+} @else if (error) {
+    <app-not-found-comp />
+}
 
 <app-footer />
