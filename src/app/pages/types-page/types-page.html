@@ -1,7 +1,9 @@
 <app-navbar />
 
-@for (pokemon of typeData?.pokemon; track pokemon.pokemon.name) {
-    <app-pokemon-card-search [name]="pokemon.pokemon.name" />
-}
+<div class="grid-container">
+    @for (pokemon of typeData?.pokemon; track pokemon.pokemon.name) {
+        <app-pokemon-card-search [name]="pokemon.pokemon.name" />
+    }
+</div>
 
 <app-footer />
