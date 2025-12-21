@@ -9,30 +9,69 @@
     <!-- Desktop: Dropdowns y búsqueda -->
     <div class="nav-desktop-container">
         <div class="dropdown-container">
-            <button id="dropdownDefaultButton" (click)="toggleDropdown()" type="button">
+            <button id="dropdownDefaultButton" (click)="toggleGenerationsDropdown()" type="button">
+            Generations 
+            <svg class="w-4 h-4 ms-1.5 -me-0.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7"/></svg>
+            </button>
+
+            <div id="dropdown" class="dropdown" [ngClass]="{'show': isGenerationsDropdownOpen}">
+                <ul class="p-2 text-sm text-body font-medium" aria-labelledby="dropdownDefaultButton">
+                <li>
+                    <a href="/generation/kanto" class="dropwdown-option">Kanto</a>
+                </li>
+                <li>
+                    <a href="/generation/johto" class="dropwdown-option">Johto</a>
+                </li>
+                <li>
+                    <a href="/generation/hoenn" class="dropwdown-option">Hoenn</a>
+                </li>
+                <li>
+                    <a href="/generation/sinnoh" class="dropwdown-option">Sinnoh</a>
+                </li>
+                <li>
+                    <a href="/generation/unova" class="dropwdown-option">Unova</a>
+                </li>
+                <li>
+                    <a href="/generation/kalos" class="dropwdown-option">Kalos</a>
+                </li>
+                <li>
+                    <a href="/generation/alola" class="dropwdown-option">Alola</a>
+                </li>
+                <li>
+                    <a href="/generation/galar" class="dropwdown-option">Galar</a>
+                </li>
+                <li>
+                    <a href="/generation/paldea" class="dropwdown-option">Paldea</a>
+                </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="dropdown-container">
+            <button id="dropdownDefaultButton" (click)="toggleTypesDropdown()" type="button">
             Types 
             <svg class="w-4 h-4 ms-1.5 -me-0.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7"/></svg>
             </button>
 
-            <div id="dropdown" class="dropdown" [ngClass]="{'show': isDropdownOpen}">
+            <div id="dropdown" class="dropdown" [ngClass]="{'show': isTypesDropdownOpen}">
                 <ul class="p-2 text-sm text-body font-medium" aria-labelledby="dropdownDefaultButton">
                 <li>
-                    <a href="#" class="pokemon-type">Fire</a>
+                    <a href="types/fire" class="dropwdown-option">Fire</a>
                 </li>
                 <li>
-                    <a href="#" class="pokemon-type">Water</a>
+                    <a href="types/water" class="dropwdown-option">Water</a>
                 </li>
                 <li>
-                    <a href="#" class="pokemon-type">Grass</a>
+                    <a href="types/grass" class="dropwdown-option">Grass</a>
                 </li>
                 <li>
-                    <a href="#" class="pokemon-type">Normal</a>
+                    <a href="/types/normal" class="dropwdown-option">Normal</a>
                 </li>
                 <li>
-                    <a href="#" class="pokemon-type">Steel</a>
+                    <a href="/types/steel" class="dropwdown-option">Steel</a>
                 </li>
                 <li>
-                    <a href="#" class="pokemon-type">Fairy</a>
+                    <a href="/types/fairy" class="dropwdown-option">Fairy</a>
                 </li>
                 </ul>
             </div>
@@ -65,30 +104,69 @@
 
         <!-- Dropdowns en móvil -->
         <div class="mobile-dropdown-container">
-            <button (click)="toggleDropdown()" type="button" class="mobile-dropdown-button">
+            <button (click)="toggleGenerationsDropdown()" type="button" class="mobile-dropdown-button">
+            Generations 
+            <svg class="w-4 h-4 ms-1.5 -me-0.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7"/></svg>
+            </button>
+
+            <div class="mobile-dropdown" [ngClass]="{'show': isGenerationsDropdownOpen}">
+                <ul class="p-2 text-sm text-body font-medium">
+                <li>
+                    <a href="/generation/kanto" class="dropwdown-option">Kanto</a>
+                </li>
+                <li>
+                    <a href="/generation/johto" class="dropwdown-option">Johto</a>
+                </li>
+                <li>
+                    <a href="/generation/hoenn" class="dropwdown-option">Hoenn</a>
+                </li>
+                <li>
+                    <a href="/generation/sinnoh" class="dropwdown-option">Sinnoh</a>
+                </li>
+                <li>
+                    <a href="/generation/unova" class="dropwdown-option">Unova</a>
+                </li>
+                <li>
+                    <a href="/generation/kalos" class="dropwdown-option">Kalos</a>
+                </li>
+                <li>
+                    <a href="/generation/alola" class="dropwdown-option">Alola</a>
+                </li>
+                <li>
+                    <a href="/generation/galar" class="dropwdown-option">Galar</a>
+                </li>
+                <li>
+                    <a href="/generation/paldea" class="dropwdown-option">Paldea</a>
+                </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="mobile-dropdown-container">
+            <button (click)="toggleTypesDropdown()" type="button" class="mobile-dropdown-button">
             Types 
             <svg class="w-4 h-4 ms-1.5 -me-0.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7"/></svg>
             </button>
 
-            <div class="mobile-dropdown" [ngClass]="{'show': isDropdownOpen}">
+            <div class="mobile-dropdown" [ngClass]="{'show': isTypesDropdownOpen}">
                 <ul class="p-2 text-sm text-body font-medium">
                 <li>
-                    <a href="#" class="pokemon-type">Fire</a>
+                    <a href="/types/fire" class="dropwdown-option">Fire</a>
                 </li>
                 <li>
-                    <a href="#" class="pokemon-type">Water</a>
+                    <a href="/types/water" class="dropwdown-option">Water</a>
                 </li>
                 <li>
-                    <a href="#" class="pokemon-type">Grass</a>
+                    <a href="/types/grass" class="dropwdown-option">Grass</a>
                 </li>
                 <li>
-                    <a href="#" class="pokemon-type">Normal</a>
+                    <a href="/types/normal" class="dropwdown-option">Normal</a>
                 </li>
                 <li>
-                    <a href="#" class="pokemon-type">Steel</a>
+                    <a href="/types/steel" class="dropwdown-option">Steel</a>
                 </li>
                 <li>
-                    <a href="#" class="pokemon-type">Fairy</a>
+                    <a href="/types/fairy" class="dropwdown-option">Fairy</a>
                 </li>
                 </ul>
             </div>

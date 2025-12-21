@@ -58,7 +58,7 @@
 
     .mobile-search button {
         @apply absolute right-2 top-1/2 transform -translate-y-1/2;
-        @apply w-12 h-10;
+        @apply mx-1 w-12 h-10;
         @apply bg-red-400 dark:bg-red-600;
         @apply rounded-lg border-2 border-red-500 dark:border-red-700;
         @apply hover:bg-red-500 dark:hover:bg-red-700;
@@ -125,7 +125,7 @@
 
     .search-bar button {
         @apply absolute right-2 top-1/2 transform -translate-y-1/2;
-        @apply w-12 h-8 mx-2;
+        @apply w-12 h-8 mx-4;
         @apply bg-gray-100 dark:bg-gray-300;
         @apply rounded-xl border-2 border-red-400 dark:border-red-800;
         @apply hover:bg-gray-300 dark:hover:bg-gray-400;
@@ -160,8 +160,9 @@
         @apply block;
     }
 
-    .pokemon-type {
+    .dropwdown-option {
         @apply inline-flex items-center w-full p-2;
+        @apply text-black dark:text-white;
         @apply rounded;
     }
 }
