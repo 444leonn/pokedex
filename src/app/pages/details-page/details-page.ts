@@ -7,12 +7,12 @@ import { Navbar } from "../../components/navbar/navbar";
 import { PokemonDetail } from '../../components/pokemon-detail/pokemon-detail';
 
 @Component({
-  selector: 'details',
+  selector: 'details-page',
   imports: [Footer, Navbar, PokemonDetail],
-  templateUrl: './details.html',
-  styleUrl: './details.css',
+  templateUrl: './details-page.html',
+  styleUrl: './details-page.css',
 })
-export class Details {
+export class DetailsPage {
   pokemonData?: Pokemon | undefined;
   name?: string | null;
   loading: boolean = false;

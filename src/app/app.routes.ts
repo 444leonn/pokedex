@@ -4,7 +4,7 @@ import { NotFound } from './pages/not-found/not-found';
 import { Search } from './pages/search/search';
 import { TypesPage } from './pages/types-page/types-page';
 import { GenerationPage } from './pages/generation-page/generation-page';
-import { Details } from './pages/details/details';
+import { DetailsPage } from './pages/details-page/details-page';
 
 export const routes: Routes = [
     {
@@ -29,7 +29,7 @@ export const routes: Routes = [
     },
     {
         path: 'details/:name',
-        component: Details,
+        component: DetailsPage,
         title: 'Pokedex - Details',
     },
     {
