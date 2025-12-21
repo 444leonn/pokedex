@@ -2,11 +2,101 @@
 
 @layer components {
     nav {
-        @apply flex items-center justify-between;
+        @apply flex items-center justify-between flex-wrap;
         @apply fixed inset-x-0 top-0 z-1000;
-        @apply px-2 py-2 min-h-fit max-h-60 w-screen;
+        @apply px-4 py-3 min-h-fit w-screen;
         @apply bg-gray-100 dark:bg-gray-700;
         @apply rounded-bl-2xl rounded-br-2xl border-2 border-red-400 dark:border-red-600;
+    }
+
+    /* Contenedor desktop - oculto en móvil */
+    .nav-desktop-container {
+        @apply hidden md:flex items-center gap-4;
+    }
+
+    /* Botón visible solo en móvil */
+    .hamburger-button {
+        @apply block md:hidden;
+        @apply p-2;
+        @apply text-red-400 dark:text-red-600;
+        @apply hover:bg-gray-200 dark:hover:bg-gray-600;
+        @apply rounded-lg;
+        @apply transition-colors duration-200;
+    }
+
+    /* Menú móvil */
+    .mobile-menu {
+        @apply w-full md:hidden;
+        @apply hidden;
+        @apply mt-4 p-4;
+        @apply bg-white dark:bg-gray-800;
+        @apply rounded-xl border border-red-400 dark:border-red-600;
+        @apply shadow-lg;
+    }
+
+    .mobile-menu.show {
+        @apply block;
+    }
+
+    /* Búsqueda en móvil */
+    .mobile-search {
+        @apply mb-4;
+    }
+
+    .mobile-search form {
+        @apply relative flex;
+    }
+
+    .mobile-search input {
+        @apply w-full h-12;
+        @apply px-4 py-2;
+        @apply bg-gray-50 dark:bg-gray-700;
+        @apply text-gray-700 dark:text-gray-50;
+        @apply rounded-xl border border-red-300 dark:border-red-500;
+        @apply focus:outline-none focus:ring-2 focus:ring-red-400;
+    }
+
+    .mobile-search button {
+        @apply absolute right-2 top-1/2 transform -translate-y-1/2;
+        @apply w-12 h-10;
+        @apply bg-red-400 dark:bg-red-600;
+        @apply rounded-lg border-2 border-red-500 dark:border-red-700;
+        @apply hover:bg-red-500 dark:hover:bg-red-700;
+        @apply transition-colors duration-200;
+    }
+
+    /* Dropdown en móvil */
+    .mobile-dropdown-container {
+        @apply w-full;
+    }
+
+    .mobile-dropdown-button {
+        @apply w-full px-4 py-3;
+        @apply bg-red-400 dark:bg-red-600;
+        @apply text-white font-medium text-base;
+        @apply rounded-xl border-2 border-red-500 dark:border-red-700;
+        @apply hover:bg-red-500 dark:hover:bg-red-700;
+        @apply flex items-center justify-between;
+        @apply transition-colors duration-200;
+    }
+
+    .mobile-dropdown {
+        @apply w-full mt-2;
+        @apply hidden;
+        @apply bg-gray-50 dark:bg-gray-700;
+        @apply rounded-xl border border-red-300 dark:border-red-500;
+    }
+
+    .mobile-dropdown.show {
+        @apply block;
+    }
+
+    .nav-left-container {
+        @apply flex items-center gap-4;
+    }
+
+    .dropdown-container {
+        @apply relative;
     }
 
     .pokeball-logo {
@@ -33,7 +123,45 @@
         @apply px-4 py-2 dark:text-gray-50 text-gray-700;
     }
 
-    button {
-        @apply fixed inset-x-0 right-0;
+    .search-bar button {
+        @apply absolute right-2 top-1/2 transform -translate-y-1/2;
+        @apply w-12 h-8 mx-2;
+        @apply bg-gray-100 dark:bg-gray-300;
+        @apply rounded-xl border-2 border-red-400 dark:border-red-800;
+        @apply hover:bg-gray-300 dark:hover:bg-gray-400;
+    }
+
+    .dropdown-container button {
+        @apply px-4 py-2;
+        @apply bg-red-400 dark:bg-red-600;
+        @apply text-white font-medium text-sm;
+        @apply rounded-xl border-2 border-red-500 dark:border-red-700;
+        @apply hover:bg-red-500 dark:hover:bg-red-700;
+        @apply flex items-center gap-1;
+        @apply transition-colors duration-200;
+    }
+
+    #dropdown-default-button {
+        @apply items-center justify-center;
+        @apply text-white;
+        @apply box-border border border-transparent;
+        @apply focus:ring-4 shadow-xs font-medium leading-5 text-sm px-4 py-2.5 focus:outline-none;
+    }
+
+    .dropdown {
+        @apply absolute top-full mt-2 left-0;
+        @apply z-10 hidden;
+        @apply bg-white dark:bg-gray-800;
+        @apply border border-red-400 dark:border-red-600 rounded-2xl;
+        @apply shadow-lg w-44;
+    }
+
+    .dropdown.show {
+        @apply block;
+    }
+
+    .pokemon-type {
+        @apply inline-flex items-center w-full p-2;
+        @apply rounded;
     }
 }

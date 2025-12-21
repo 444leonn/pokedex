@@ -6,10 +6,92 @@
         <h1>Pokedex</h1>
     </div>
 
-    <div class="search-bar">
-        <form>
-            <input class="search-input" type="text" placeholder="Search"/>
-            
-        </form>
+    <!-- Desktop: Dropdowns y búsqueda -->
+    <div class="nav-desktop-container">
+        <div class="dropdown-container">
+            <button id="dropdownDefaultButton" (click)="toggleDropdown()" type="button">
+            Types 
+            <svg class="w-4 h-4 ms-1.5 -me-0.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7"/></svg>
+            </button>
+
+            <div id="dropdown" class="dropdown" [ngClass]="{'show': isDropdownOpen}">
+                <ul class="p-2 text-sm text-body font-medium" aria-labelledby="dropdownDefaultButton">
+                <li>
+                    <a href="#" class="pokemon-type">Fire</a>
+                </li>
+                <li>
+                    <a href="#" class="pokemon-type">Water</a>
+                </li>
+                <li>
+                    <a href="#" class="pokemon-type">Grass</a>
+                </li>
+                <li>
+                    <a href="#" class="pokemon-type">Normal</a>
+                </li>
+                <li>
+                    <a href="#" class="pokemon-type">Steel</a>
+                </li>
+                <li>
+                    <a href="#" class="pokemon-type">Fairy</a>
+                </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="search-bar">
+            <form [formGroup]="searchForm"  (ngSubmit)="onSubmit()">
+                <input class="search-input" type="text" placeholder="Search" formControlName="searchInput" />
+                <button type="submit">🔍</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Botón (solo móvil) -->
+    <button class="hamburger-button" (click)="toggleMobileMenu()" type="button">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+    </button>
+
+    <!-- Menú móvil -->
+    <div class="mobile-menu" [ngClass]="{'show': isMobileMenuOpen}">
+        <!-- Búsqueda en móvil -->
+        <div class="mobile-search">
+            <form [formGroup]="searchForm"  (ngSubmit)="onSubmit(); toggleMobileMenu()">
+                <input class="search-input" type="text" placeholder="Search" formControlName="searchInput" />
+                <button type="submit">🔍</button>
+            </form>
+        </div>
+
+        <!-- Dropdowns en móvil -->
+        <div class="mobile-dropdown-container">
+            <button (click)="toggleDropdown()" type="button" class="mobile-dropdown-button">
+            Types 
+            <svg class="w-4 h-4 ms-1.5 -me-0.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7"/></svg>
+            </button>
+
+            <div class="mobile-dropdown" [ngClass]="{'show': isDropdownOpen}">
+                <ul class="p-2 text-sm text-body font-medium">
+                <li>
+                    <a href="#" class="pokemon-type">Fire</a>
+                </li>
+                <li>
+                    <a href="#" class="pokemon-type">Water</a>
+                </li>
+                <li>
+                    <a href="#" class="pokemon-type">Grass</a>
+                </li>
+                <li>
+                    <a href="#" class="pokemon-type">Normal</a>
+                </li>
+                <li>
+                    <a href="#" class="pokemon-type">Steel</a>
+                </li>
+                <li>
+                    <a href="#" class="pokemon-type">Fairy</a>
+                </li>
+                </ul>
+            </div>
+        </div>
     </div>
 </nav>
