@@ -1,5 +1,15 @@
-<div class="pokemon-card">
-    <img [src]="pokemon?.sprites?.front_default" [alt]="pokemon?.name" />
-    <h2>{{ pokemon?.name }}</h2>
-    <p>ID: {{ pokemon?.id }}</p>
-</div>
+@if (loading) {
+    <div class="pokemon-card">
+        <h2>Loading</h2>
+    </div>
+} @else if (pokemon) {
+    <div class="pokemon-card">
+        <img [src]="pokemon.sprites.front_default" [alt]="pokemon.name" />
+        <h2>{{ pokemon.name }}</h2>
+        <p>ID: {{ pokemon.id }}</p>
+    </div>
+} @else if (error) {
+    <div class="pokemon-card">
+        <h2>Error</h2>
+    </div>
+}

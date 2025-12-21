@@ -12,7 +12,7 @@
     }
 
     .pokemon-card img {
-        @apply w-20 h-20 object-contain mb-2;
+        @apply w-30 h-30 object-contain mb-2;
     }
 
     .pokemon-card h2 {
