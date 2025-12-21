@@ -71,7 +71,7 @@
     }
 
     .mobile-dropdown-button {
-        @apply w-full px-4 py-3;
+        @apply w-full my-2 px-4 py-3;
         @apply bg-red-400 dark:bg-red-600;
         @apply text-white font-medium text-base;
         @apply rounded-xl border-2 border-red-500 dark:border-red-700;
