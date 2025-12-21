@@ -9,8 +9,17 @@
     }
 
     .pokeball-logo {
-        @apply min-h-13 min-w-13 max-h-14 max-w-14;
+        @apply flex items-center gap-3;
         @apply transition-transform duration-300 hover:scale-110;
+    }
+    
+    .pokeball-logo img {
+        @apply w-12 h-12 object-contain;
+    }
+    
+    h1 {
+        @apply text-xl text-left;
+        @apply text-red-400 dark:text-red-600;
     }
 
     .search-bar {
