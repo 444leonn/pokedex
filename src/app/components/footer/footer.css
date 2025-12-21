@@ -9,7 +9,7 @@
     }
 
     h1 {
-        @apply static text-center text-2xl my-1;
+        @apply static text-center text-xl my-1;
         @apply font-bold font-mono text-gray-950 dark:text-white;
     }
 
@@ -29,7 +29,7 @@
     }
 
     img {
-        @apply min-h-11 min-w-11 max-h-11 max-w-11;
+        @apply w-6 h-6;
     }
 
     span {
