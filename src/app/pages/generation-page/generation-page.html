@@ -2,7 +2,7 @@
 
 @if (genData) {
     <div class="grid-container">
-        @for (pokemon of genData?.pokemon_species; track pokemon.name) {
+        @for (pokemon of genData.pokemon_species; track pokemon.name) {
             <app-pokemon-card-search [name]="pokemon.name" />
         }
     </div>
