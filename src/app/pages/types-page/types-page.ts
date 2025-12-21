@@ -1,6 +1,6 @@
 import { Component, ChangeDetectorRef, OnInit } from '@angular/core';
 import { ActivatedRoute, ParamMap } from '@angular/router';
-import { HttpClient,httpResource } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { PokemonTypeData } from '../../models/aux.model';
 import { Navbar } from "../../components/navbar/navbar";
 import { Footer } from "../../components/footer/footer";
