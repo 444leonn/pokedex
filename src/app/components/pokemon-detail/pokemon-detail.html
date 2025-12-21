@@ -1,0 +1,35 @@
+<div class="content">
+    @if (pokemon) {
+        <h1>{{pokemon.name}}</h1>
+        <div class="main-content">
+            <div class="images">
+                <div>
+                    <img [src]="pokemon.sprites.front_default">
+                </div>
+                <div>
+                    <img [src]="pokemon.sprites.back_default">
+                </div>
+                <div>
+                    <img [src]="pokemon.sprites.front_shiny">
+                </div>
+                <div>
+                    <img [src]="pokemon.sprites.back_shiny">
+                </div>
+            </div>
+
+            <div class="info">
+                <h1>Information</h1>
+                <p class="id">Id: #{{pokemon.id}}</p>
+                <p class="data">Weight: {{pokemon.weight}}</p>
+                <p class="data">Height: {{pokemon.height}}</p>
+            </div>
+        </div>
+
+    } @else if (loading) {
+        <div class="loading">
+            <h2>Loading...</h2>
+        </div>
+    } @else {
+        <app-not-found-comp />
+    }
+</div>
