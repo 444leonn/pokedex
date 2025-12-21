@@ -1,59 +1,61 @@
 # Pokedex
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.0.4.
+[![Ask DeepWiki](https://devin.ai/assets/askdeepwiki.png)](https://deepwiki.com/444leonn/pokedex)
 
-## Development server
+A dynamic and responsive Pokedex web application built with Angular, allowing users to browse, search, and view detailed information about various Pokémon. 
 
-To start a local development server, run:
+This project leverages the comprehensive [PokéAPI](https://pokeapi.co/) for all Pokémon data.
+
+## Features
+
+*   **Pokémon Search:** Instantly find any Pokémon by its name.
+*   **Browse by Generation:** Explore Pokémon from all nine generations, from Kanto to Paldea.
+*   **Filter by Type:** View collections of Pokémon based on their type (e.g., Fire, Water, Steel).
+*   **Detailed Information:** Access a detailed view for each Pokémon, including its ID, height, weight, and multiple sprites (front, back, and shiny).
+*   **Responsive Design:** Fully responsive layout for a seamless experience on both desktop and mobile devices.
+*   **Popular Pokémon Carousel:** Discover popular Pokémon through an animated carousel on the homepage.
+
+## Tech Stack
+
+*   **Framework:** Angular
+*   **Styling:** TailwindCSS
+*   **API:** PokéAPI
+
+## Getting Started
+
+To get a local copy up and running, please follow these simple steps.
+
+### Prerequisites
+
+Make sure you have Node.js and the Angular CLI installed on your machine.
+
+*   Node.js (LTS version recommended)
+*   Angular CLI (`npm install -g @angular/cli`)
+
+### Installation & Setup
+
+1.  **Clone the repository**
+    ```sh
+    git clone https://github.com/444leonn/pokedex.git
+    ```
+
+2.  **Navigate to the project directory**
+    ```sh
+    cd pokedex
+    ```
+
+3.  **Install dependencies**
+    ```sh
+    npm install
+    ```
+
+## Usage
+
+### Development Server
+
+Run `ng serve` to start the development server. Navigate to `http://localhost:4200/`. The application will automatically reload if you make any changes to the source files.
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
