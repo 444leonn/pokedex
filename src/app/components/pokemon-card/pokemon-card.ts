@@ -22,8 +22,6 @@ export class PokemonCard implements OnInit {
       this.http.get<Pokemon>(`https://pokeapi.co/api/v2/pokemon/${this.name}`)
       .subscribe({
         next: (response) => {
-          console.log(this.name);
-          console.log(response);
           this.pokemon = response;
           this.loading = false;
           this.cdr.detectChanges();
