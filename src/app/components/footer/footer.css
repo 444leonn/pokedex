@@ -3,7 +3,8 @@
 @layer components {
     footer {
         @apply fixed inset-x-0 bottom-0;
-        @apply px-2 py-2 min-h-fit max-h-60 w-full;
+        @apply px-2 py-2 min-h-fit max-h-60;
+        @apply w-screen;
         @apply bg-gray-100 dark:bg-gray-700;
         @apply rounded-tl-2xl rounded-tr-2xl border-2 border-red-400 dark:border-red-600;
     }
