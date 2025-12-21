@@ -3,6 +3,7 @@ import { Home } from './pages/home/home';
 import { NotFound } from './pages/not-found/not-found';
 import { Search } from './pages/search/search';
 import { TypesPage } from './pages/types-page/types-page';
+import { GenerationPage } from './pages/generation-page/generation-page';
 
 export const routes: Routes = [
     {
@@ -19,6 +20,11 @@ export const routes: Routes = [
         path: 'types/:name',
         component: TypesPage,
         title: 'Pokedex - Types',
+    },
+    {
+        path: 'generation/:name',
+        component: GenerationPage,
+        title: 'Pokedex - Generation',
     },
     {
         path: '**',
