@@ -13,7 +13,8 @@ export class Navbar {
   searchForm = new FormGroup({
     searchInput: new FormControl(''),
   })
-  isDropdownOpen = false;
+  isGenerationsDropdownOpen = false;
+  isTypesDropdownOpen = false;
   isMobileMenuOpen = false;
 
   constructor(private router: Router) { }
@@ -22,8 +23,12 @@ export class Navbar {
     this.router.navigateByUrl(`/search/${this.searchForm.value.searchInput}`)
   }
 
-  toggleDropdown() {
-    this.isDropdownOpen = !this.isDropdownOpen;
+  toggleGenerationsDropdown() {
+    this.isGenerationsDropdownOpen = !this.isGenerationsDropdownOpen;
+  }
+
+  toggleTypesDropdown() {
+    this.isTypesDropdownOpen = !this.isTypesDropdownOpen;
   }
 
   toggleMobileMenu() {
