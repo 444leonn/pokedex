@@ -15,6 +15,17 @@ export interface PokemonType {
   type: NamedAPIResource;
 }
 
+export interface PokemonTypeData {
+  name: string;
+  pokemon: {
+    pokemon: {
+      name: string;
+      url: string;  
+    };
+    slot: number;
+  }[];
+}
+
 export interface PokemonAbility {
   is_hidden: boolean;
   ability: NamedAPIResource;
