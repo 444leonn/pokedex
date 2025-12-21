@@ -1,0 +1,30 @@
+@import 'tailwindcss';
+
+@layer components {
+    .carousel {
+        @apply w-full overflow-hidden relative py-4;
+    }
+
+    .carousel::before,
+    .carousel::after {
+        @apply content-[''] absolute top-0 w-16 h-full z-10 pointer-events-none;
+    }
+
+    .carousel-track {
+        @apply flex gap-4;
+        animation: scroll 30s linear infinite;
+    }
+
+    .carousel-track app-pokemon-card {
+        @apply flex-shrink-0 w-40;
+    }
+
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+}
