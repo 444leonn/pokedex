@@ -4,6 +4,7 @@ import { NotFound } from './pages/not-found/not-found';
 import { Search } from './pages/search/search';
 import { TypesPage } from './pages/types-page/types-page';
 import { GenerationPage } from './pages/generation-page/generation-page';
+import { Details } from './pages/details/details';
 
 export const routes: Routes = [
     {
@@ -25,6 +26,11 @@ export const routes: Routes = [
         path: 'generation/:id',
         component: GenerationPage,
         title: 'Pokedex - Generation',
+    },
+    {
+        path: 'details/:name',
+        component: Details,
+        title: 'Pokedex - Details',
     },
     {
         path: '**',
