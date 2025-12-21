@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 import { Navbar } from '../../components/navbar/navbar';
 import { Footer } from '../../components/footer/footer';
-import { Details } from "../details/details";
+import { PokemonCarousel } from "../../components/pokemon-carousel/pokemon-carousel";
 
 @Component({
   selector: 'home',
-  imports: [Navbar, Footer],
+  imports: [Navbar, Footer, PokemonCarousel],
   templateUrl: './home.html',
   styleUrl: './home.css',
 })
