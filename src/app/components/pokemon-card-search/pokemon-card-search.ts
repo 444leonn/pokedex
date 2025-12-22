@@ -1,10 +1,11 @@
 import { Component, OnInit, Input, ChangeDetectorRef } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Pokemon } from '../../models/pokemon.model';
+import { RouterLink } from "@angular/router";
 
 @Component({
   selector: 'app-pokemon-card-search',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './pokemon-card-search.html',
   styleUrl: './pokemon-card-search.css',
 })

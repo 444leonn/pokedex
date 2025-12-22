@@ -17,31 +17,31 @@
             <div id="dropdown" class="dropdown" [ngClass]="{'show': isGenerationsDropdownOpen}">
                 <ul class="p-2 text-sm text-body font-medium" aria-labelledby="dropdownDefaultButton">
                 <li>
-                    <a href="/generation/1" class="dropwdown-option">Kanto</a>
+                    <a [routerLink]="['/generation', '1']" class="dropwdown-option">Kanto</a>
                 </li>
                 <li>
-                    <a href="/generation/2" class="dropwdown-option">Johto</a>
+                    <a [routerLink]="['/generation', '2']" class="dropwdown-option">Johto</a>
                 </li>
                 <li>
-                    <a href="/generation/3" class="dropwdown-option">Hoenn</a>
+                    <a [routerLink]="['/generation', '3']" class="dropwdown-option">Hoenn</a>
                 </li>
                 <li>
-                    <a href="/generation/4" class="dropwdown-option">Sinnoh</a>
+                    <a [routerLink]="['/generation', '4']" class="dropwdown-option">Sinnoh</a>
                 </li>
                 <li>
-                    <a href="/generation/5" class="dropwdown-option">Unova</a>
+                    <a [routerLink]="['/generation', '5']" class="dropwdown-option">Unova</a>
                 </li>
                 <li>
-                    <a href="/generation/6" class="dropwdown-option">Kalos</a>
+                    <a [routerLink]="['/generation', '6']" class="dropwdown-option">Kalos</a>
                 </li>
                 <li>
-                    <a href="/generation/7" class="dropwdown-option">Alola</a>
+                    <a [routerLink]="['/generation', '7']" class="dropwdown-option">Alola</a>
                 </li>
                 <li>
-                    <a href="/generation/8" class="dropwdown-option">Galar</a>
+                    <a [routerLink]="['/generation', '8']" class="dropwdown-option">Galar</a>
                 </li>
                 <li>
-                    <a href="/generation/9" class="dropwdown-option">Paldea</a>
+                    <a [routerLink]="['/generation', '9']" class="dropwdown-option">Paldea</a>
                 </li>
                 </ul>
             </div>
@@ -56,22 +56,22 @@
             <div id="dropdown" class="dropdown" [ngClass]="{'show': isTypesDropdownOpen}">
                 <ul class="p-2 text-sm text-body font-medium" aria-labelledby="dropdownDefaultButton">
                 <li>
-                    <a href="types/fire" class="dropwdown-option">Fire</a>
+                    <a [routerLink]="['/types', 'fire']" class="dropwdown-option">Fire</a>
                 </li>
                 <li>
-                    <a href="types/water" class="dropwdown-option">Water</a>
+                    <a [routerLink]="['/types', 'water']" class="dropwdown-option">Water</a>
                 </li>
                 <li>
-                    <a href="types/grass" class="dropwdown-option">Grass</a>
+                    <a [routerLink]="['/types', 'grass']" class="dropwdown-option">Grass</a>
                 </li>
                 <li>
-                    <a href="/types/normal" class="dropwdown-option">Normal</a>
+                    <a [routerLink]="['/types', 'normal']" class="dropwdown-option">Normal</a>
                 </li>
                 <li>
-                    <a href="/types/steel" class="dropwdown-option">Steel</a>
+                    <a [routerLink]="['/types', 'steel']" class="dropwdown-option">Steel</a>
                 </li>
                 <li>
-                    <a href="/types/fairy" class="dropwdown-option">Fairy</a>
+                    <a [routerLink]="['/types', 'fairy']" class="dropwdown-option">Fairy</a>
                 </li>
                 </ul>
             </div>
@@ -112,31 +112,31 @@
             <div class="mobile-dropdown" [ngClass]="{'show': isGenerationsDropdownOpen}">
                 <ul class="p-2 text-sm text-body font-medium">
                 <li>
-                    <a href="/generation/1" class="dropwdown-option">Kanto</a>
+                    <a [routerLink]="['/generation', '1']" class="dropwdown-option">Kanto</a>
                 </li>
                 <li>
-                    <a href="/generation/2" class="dropwdown-option">Johto</a>
+                    <a [routerLink]="['/generation', '2']" class="dropwdown-option">Johto</a>
                 </li>
                 <li>
-                    <a href="/generation/3" class="dropwdown-option">Hoenn</a>
+                    <a [routerLink]="['/generation', '3']" class="dropwdown-option">Hoenn</a>
                 </li>
                 <li>
-                    <a href="/generation/4" class="dropwdown-option">Sinnoh</a>
+                    <a [routerLink]="['/generation', '4']" class="dropwdown-option">Sinnoh</a>
                 </li>
                 <li>
-                    <a href="/generation/5" class="dropwdown-option">Unova</a>
+                    <a [routerLink]="['/generation', '5']" class="dropwdown-option">Unova</a>
                 </li>
                 <li>
-                    <a href="/generation/6" class="dropwdown-option">Kalos</a>
+                    <a [routerLink]="['/generation', '6']" class="dropwdown-option">Kalos</a>
                 </li>
                 <li>
-                    <a href="/generation/7" class="dropwdown-option">Alola</a>
+                    <a [routerLink]="['/generation', '7']" class="dropwdown-option">Alola</a>
                 </li>
                 <li>
-                    <a href="/generation/8" class="dropwdown-option">Galar</a>
+                    <a [routerLink]="['/generation', '8']" class="dropwdown-option">Galar</a>
                 </li>
                 <li>
-                    <a href="/generation/9" class="dropwdown-option">Paldea</a>
+                    <a [routerLink]="['/generation', '9']" class="dropwdown-option">Paldea</a>
                 </li>
                 </ul>
             </div>
@@ -151,22 +151,22 @@
             <div class="mobile-dropdown" [ngClass]="{'show': isTypesDropdownOpen}">
                 <ul class="p-2 text-sm text-body font-medium">
                 <li>
-                    <a href="/types/fire" class="dropwdown-option">Fire</a>
+                    <a [routerLink]="['/types', 'fire']" class="dropwdown-option">Fire</a>
                 </li>
                 <li>
-                    <a href="/types/water" class="dropwdown-option">Water</a>
+                    <a [routerLink]="['/types', 'water']" class="dropwdown-option">Water</a>
                 </li>
                 <li>
-                    <a href="/types/grass" class="dropwdown-option">Grass</a>
+                    <a [routerLink]="['/types', 'grass']" class="dropwdown-option">Grass</a>
                 </li>
                 <li>
-                    <a href="/types/normal" class="dropwdown-option">Normal</a>
+                    <a [routerLink]="['/types', 'normal']" class="dropwdown-option">Normal</a>
                 </li>
                 <li>
-                    <a href="/types/steel" class="dropwdown-option">Steel</a>
+                    <a [routerLink]="['/types', 'steel']" class="dropwdown-option">Steel</a>
                 </li>
                 <li>
-                    <a href="/types/fairy" class="dropwdown-option">Fairy</a>
+                    <a [routerLink]="['/types', 'fairy']" class="dropwdown-option">Fairy</a>
                 </li>
                 </ul>
             </div>
