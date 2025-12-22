@@ -13,12 +13,12 @@ export const routes: Routes = [
         title: 'Pokedex - Home',
     },
     {
-        path: '/search/:name',
+        path: 'search/:name',
         component: Search,
         title: 'Pokedex - Search',
     },
     {
-        path: '/types/:name',
+        path: 'types/:name',
         component: TypesPage,
         title: 'Pokedex - Types',
     },
