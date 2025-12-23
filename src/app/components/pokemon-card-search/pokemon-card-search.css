@@ -3,7 +3,8 @@
 @layer components {
     .pokemon-card-search {
         @apply relative flex flex-col items-center justify-center;
-        @apply w-45 h-45 rounded-xl p-2;
+        @apply w-35 h-35 sm:w-45 sm:h-45;
+        @apply rounded-xl p-2;
         @apply bg-white dark:bg-gray-800;
         @apply shadow-md hover:shadow-xl;
         @apply cursor-pointer transition-all duration-300 hover:-translate-y-1;
@@ -13,7 +14,8 @@
     }
 
     .pokemon-card-search img {
-        @apply w-full h-32 object-contain;
+        @apply w-30 h-30 sm:w-35 sm:h-35;
+        @apply object-scale-down;
     }
 
     .pokemon-card-search h2 {
