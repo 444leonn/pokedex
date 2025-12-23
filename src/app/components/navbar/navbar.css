@@ -100,7 +100,6 @@
     }
 
     .pokeball-logo {
-        @apply flex items-center gap-3;
         @apply transition-transform duration-300 hover:scale-110;
     }
     
@@ -108,8 +107,9 @@
         @apply w-12 h-12 object-contain;
     }
     
-    h1 {
-        @apply text-xl text-left;
+    .pokeball-logo a {
+        @apply flex items-center gap-3;
+        @apply text-xl;
         @apply text-red-400 dark:text-red-600;
     }
 
