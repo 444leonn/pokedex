@@ -87,6 +87,13 @@
         @apply rounded-xl border border-red-300 dark:border-red-500;
     }
 
+    .mobile-dropdown ul {
+        @apply grid grid-cols-2 gap-1;
+        @apply p-2;
+        @apply text-sm font-medium;
+    }
+
+
     .mobile-dropdown.show {
         @apply block;
     }
@@ -153,16 +160,23 @@
         @apply z-10 hidden;
         @apply bg-white dark:bg-gray-800;
         @apply border border-red-400 dark:border-red-600 rounded-2xl;
-        @apply shadow-lg w-44;
+        @apply shadow-lg w-96;
+    }
+
+    .dropdown ul {
+        @apply grid grid-cols-2 gap-1;
+        @apply p-2;
+        @apply text-sm font-medium;
     }
 
     .dropdown.show {
         @apply block;
     }
 
-    .dropwdown-option {
-        @apply inline-flex items-center w-full p-2;
+    .dropdown-option {
+        @apply items-center w-full;
         @apply text-black dark:text-white;
         @apply rounded;
+        @apply hover:bg-gray-100 dark:hover:bg-gray-700;
     }
 }
